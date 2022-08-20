@@ -1,0 +1,563 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* header {
+  position: fixed;
+} */
+.nav {
+  background-color: rgb(24, 23, 23);
+  position: fixed;
+  height: 70px;
+  width: 100%;
+  overflow-x: hidden;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.column1 img {
+  width: 4rem;
+  padding-top: 5px;
+}
+.column1 img:hover {
+  cursor: pointer;
+  width: 3.8rem;
+}
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.column2 a {
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  color: white;
+  font-weight: 500;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.column2 a:hover {
+  color: blue;
+  /* font-weight: 550; */
+  /* background-color: yellow; */
+  /* padding: 3px 5px; */
+  /* border-radius: 5px; */
+}
+.column2 nav {
+  display: flex;
+}
+/* .column2 button i {
+  size: 10rem;
+} */
+/* .column2 input {
+  border-radius: 1rem;
+  border: 0px solid;
+} */
+.form {
+  background-color: aliceblue;
+  border-radius: 50px;
+  height: 40px;
+  /* padding: 10px; */
+  margin-top: 6px;
+  display: flex;
+}
+.form input {
+  background: transparent;
+  border: none;
+  width: 120px;
+  outline: none;
+  margin-right: 10px;
+  padding: 0 10px;
+}
+/* .form button  i {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: red;
+  border-radius: 50%;
+  float: right;
+  padding: 3px 4px;
+  height: 25px;
+  width: 25px;
+} */
+.form .s-btn {
+  background: red;
+  height: 35px;
+  width: 35px;
+  margin: 2px 4px 0 0;
+  /* float: right; */
+  display: flex;
+  float: right;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+}
+.hero {
+  background-color: rgb(24, 23, 23);
+  margin-top: 0 !important;
+  padding: 70px 0;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.row2 {
+  display: flex;
+  flex-direction: column;
+}
+.hero h1 {
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.hero p {
+  color: white;
+  text-align: center;
+  padding: 0 100px;
+  flex-wrap: wrap;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn button {
+  background: rgba(104, 104, 253, 0.918);
+  padding: 15px 20px;
+  color: white;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+}
+.p-btn {
+  margin-right: 10px;
+}
+.btn button:hover {
+  color: rgba(104, 104, 253, 0.918);
+  background: white;
+}
+/* .btn button a {
+  color: white;
+  text-decoration: none;
+}
+.btn button a:hover {
+ 
+} */
+.column2 a span i {
+  font-size: 25px;
+  color: white;
+  margin-top: 15px;
+}
+
+/*CARDS*/
+.cards {
+  display: flex;
+  color: white;
+  cursor: pointer;
+  gap: 20px;
+  width: 100%;
+  overflow: hidden;
+  /* margin: 0 150px; */
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+/* .cards i {
+
+} */
+.card1 {
+  background-image: url(./images/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card2 {
+  background-image: url(./images/danny-howe-bn-D2bCvpik-unsplash.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card3 {
+  background-image: url(./images/israel-palacio-Y20JJ_ddy9M-unsplash.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card4 {
+  background-image: url(./images/john-matychuk-gUK3lA3K7Yo-unsplash.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card5 {
+  background-image: url(./images/umberto-FewHpO4VC9Y-unsplash.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cards i {
+  padding: 5rem;
+  font-size: 5rem;
+  /* opacity: 90%; */
+}
+.hero2{
+  background-color: black;
+  padding: 70px 0;
+
+}
+.row3{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.headp h1{
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.cards-S2-cont1{
+  display: flex;
+  gap:30px ;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.cards-S2-cont2{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+
+}
+.card1-S2{
+  background-image: url(./images/pexels-charlotte-may-5965896.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card2-S2{
+  background-image: url(./images/pexels-sebastiaan-stam-1482476.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card3-S2{
+  background-image: url(./images/pexels-ali-pazani-4407690.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card4-S2{
+  background-image: url(./images/pexels-cottonbro-6686455.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card5-S2{
+  background-image: url(./images/pexels-mwabonje-1694900.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.card6-S2{
+  background-image: url(./images/pexels-thibault-trillet-167491.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cards-S2 a{
+  text-decoration: none;
+  color: white;
+}
+.img-back{
+  background-image: url(./images/pexels-marcelo-chagas-1876279.jpg);
+  height: 800px;
+  width: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contents-3s a{
+  text-decoration: none;
+  color: white;
+  padding-left: 100px;
+
+}
+.hero3{
+  background-color: black;
+}
+.row4{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.grids-S{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+
+}
+
+.grids-S{
+  text-decoration: none;
+  color: white;
+  
+}
+.red{
+  background-image: url(./images/pexels-wallace-chuck-3587496.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.blue{
+  background-image: url(./images/pexels-charlotte-may-5965896.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.yellow{
+  background-image: url(./images/pexels-blue-bird-7243191.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.green{
+  background-image: url(./images/pexels-rachel-claire-6773804.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
+}
+.black{
+  background-image: url(./images/pexels-faruk-tokluoğlu-7101498.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
+ 
+}
+.wine{
+  background-image: url(./images/pexels-dziubi-steenbergen-1044488.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
+ 
+
+}
+.pink{
+  background-image: url(./images/pexels-nataliya-vaitkevich-5070067.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+
+}
+.redo{
+  background-image: url(./images/pexels-alena-darmel-7862592.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+.red1{
+  background-image: url(./images/pexels-mikhail-nilov-8093955.jpg);
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero6{
+  background-color: black;
+  padding: 80px 0;
+}
+.row7{
+  text-decoration: none;
+  color: white;
+  background-image: url(./images/aditya-chinchure-ZhQCZjr9fHo-unsplash.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  margin-left: 100px;
+  padding-top: 50px;
+
+  
+}
+.hero5{
+  background-color: black;
+  padding: 80px 0;
+}
+.row6{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 30px;
+
+}
+.grids{
+  display: flex;
+  gap:30px ;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.grid1{
+  background-color: gray;
+  padding: 10px;
+}
+.grid2{
+  background-color: gray;
+  padding: 10px;
+}
+.grid3{
+  background-color: gray;
+  padding: 10px;
+}
+.grids-content{
+  font-size: 1cm;
+  flex-wrap: wrap;
+  
+}
+.grids-S{
+  text-decoration: none;
+  color: white;
+}
+.grids-S1{
+  text-decoration: none;
+  color: white;
+}
+.hero6 h1{
+  margin: -100px;
+  padding-top: 180px;
+  font-size: 1cm;
+ color: red;
+}
+.hero6 h2{
+  font-size: 1cm;
+  text-decoration: none;
+  color: white;
+}
+.hero11 h1{
+  font-size: 2cm;
+  text-decoration: none;
+  color: white;
+}
+.hero8 h1{
+  font-size: 2cm;
+  text-decoration: none;
+  color: white;
+}
+.hero15{
+  background-color: black;
+  padding: 70px 0;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 1cm;
+}
+.row16{
+  display: flex;
+  flex-direction: column;
+}
+.container-b{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.album{
+  display: flex;
+  cursor: pointer;
+  gap: 20px;
+  width: 100px;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+}
+.tracks{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.track2{
+  text-decoration: center;
+  align-content: center;
+  height: 200px;
+  width: 300px;
+}
+.track3{
+  text-decoration: center;
+  align-content: center;
+  height: 200px;
+  width: 300px;
+}
+.track4{
+  text-decoration: center;
+  align-content: center;
+  height: 200px;
+  width: 300px;
+}
+
+
+

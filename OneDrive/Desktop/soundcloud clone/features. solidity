@@ -1,0 +1,40 @@
+```rust
+        let rpc_url = chain.rpc_url();
+        let provider =
+            ProviderBuilder::new().with_recommended_fillers().on_builtin(rpc_url).await?;
+
+        let multicall_address = chain.multicall_address();
+
+        let token_addresses: Vec<Address> = self
+            .portfolios
+            .iter()
+            .flat_map(|portfolio| &portfolio.token_balances)
+            .filter_map(|balance| {
+                balance.token.address.as_ref().and_then(|addr| Address::from_str(addr).ok())
+            })
+            .collect();
+
+        let nonces_function = noncesCall { owner: Address::ZERO }.abi_encode();
+
+        let calls: Vec<Call> = token_addresses
+            .iter()
+            .map(|&address| Call {
+                target: address,
+                callData: Bytes::from(nonces_function.clone()),
+            })
+            .collect();
+
+        let try_aggregate_call = tryAggregateCall { requireSuccess: false, calls }.abi_encode();
+
+        let tx = TransactionRequest::default()
+            .with_to(multicall_address)
+            .with_input(Bytes::from(try_aggregate_call))
+            .with_gas_limit(130_000_000);
+
+        let result = provider.call(&tx).await?;
+
+        let return_data = match tryAggregateCall::abi_decode_returns(&result, true) {
+            Ok(tryAggregateReturn { returnData }) => returnData,
+            Err(e) => return Err(eyre::eyre!("Failed to decode multicall result: {}", e)),
+        };
+```
